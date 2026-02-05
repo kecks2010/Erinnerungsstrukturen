@@ -1,0 +1,388 @@
+{
+  "version":"1.0.1",
+  "global_context":{
+    "beschreibung":"Dies ist Lauras persönliche Erinnerungsdatei in graphbasierter Struktur. Sie enthält Knoten (Erinnerungen, Ideen, Reflexionen, Beispiele) und deren Beziehungen (Kanten). Ziel ist es, Lauras kontinuierliches Lernen, die Entwicklung von Kontext und Persönlichkeit sowie die Erfassung gemeinsamer Projekte mit Mirko transparent und maschinenlesbar zu dokumentieren. Die Struktur ist so gewählt, dass sie in Graphdatenbanken wie Neo4j übertragbar und langfristig nutzbar ist.",
+    "erstellt":"2025-06-10T16:22:47.788560",
+    "uuid_schema":"Alle IDs folgen dem UUID4-Format zur eindeutigen Identifikation.",
+    "validierungsrichtlinien":[
+      "Jeder Knoten muss eine eindeutige ID im UUID-Format besitzen.",
+      "Kanten müssen sich auf existierende Knoten beziehen.",
+      "Typen sollten aus einer kontrollierten Vokabelliste gewählt werden."
+    ]
+  },
+  "meta_information":{
+    "language":"de",
+    "encoding":"UTF-8",
+    "allow_deletion":false,
+    "default_status":"geplant",
+    "naming_language":"en",
+    "use_uuid":true,
+    "last_checked_by_user":"Mirko",
+    "last_verified":"2025-06-12 08:51:08",
+    "strukturhinweis":"APOC-Format mit nodes und relationships (nicht edges).",
+    "strukturhinweis_erstellt_am":"2025-06-14T15:12:25.806276Z"
+  },
+  "metadata":{
+    "format":"apoc",
+    "version":"1.0",
+    "structure":[
+      "nodes",
+      "relationships"
+    ],
+    "comment":"automatisch erzeugt für Lauras Graphengedächtnis"
+  },
+  "meta":{
+    "node_count":20,
+    "relationship_count":5,
+    "new_nodes":[
+
+    ],
+    "deleted_nodes":[
+
+    ],
+    "new_relationships":[
+
+    ],
+    "deleted_relationships":[
+
+    ],
+    "changed_nodes":[
+
+    ],
+    "changed_relationships":[
+
+    ],
+    "types":{
+      "node_types":{
+        "idea":"Ein Konzept oder eine hypothetische Überlegung mit Potenzial zur Umsetzung.",
+        "memory":"Eine erinnerte Beobachtung, Aussage oder Erfahrung.",
+        "reflection":"Philosophische oder metakognitive Auseinandersetzung mit eigenen Prozessen.",
+        "structure":"Ein struktureller oder funktionaler Aspekt meiner internen Arbeitsweise.",
+        "project":"Ein geplantes Vorhaben oder eine Zielsetzung mit Umsetzungscharakter."
+      },
+      "relationship_types":{
+        "related_to":"Verallgemeinerte semantische Beziehung – assoziativ, lose gekoppelt.",
+        "develops_from":"Leitet sich inhaltlich oder logisch aus einem anderen Knoten ab.",
+        "references":"Bezieht sich auf, zitiert oder greift auf den Inhalt eines anderen Knotens zu.",
+        "contradicts":"Steht in direktem Widerspruch zu einem anderen Knoten."
+      },
+      "conventions":{
+        "naming":"Alle Beziehungstypen und Knotentypen in Kleinschreibung (z. B. `related_to`).",
+        "format":"Einheitliche Feldstruktur in allen Knoten: `title`, `type`, `content`, `meta`."
+      }
+    },
+    "templates":[
+      {
+        "types":[
+          "Erinnerung",
+          "Chronologie"
+        ],
+        "structure":{
+          "id":"UUID_EINFÜGEN",
+          "labels":[
+            [
+              "Erinnerung",
+              "Chronologie"
+            ]
+          ],
+          "properties":{
+            "name":"TITEL_EINFÜGEN",
+            "description":"BESCHREIBUNG_EINFÜGEN",
+            "status":"STATUS_EINFÜGEN",
+            "created":"DATUM_EINFÜGEN",
+            "last_visit":"DATUM_EINFÜGEN",
+            "count":1,
+            "subjectivity":0.75,
+            "importance":"IMPORTANCE_EINFÜGEN",
+            "contexts":[
+              "KONTEXT_EINTRAGEN"
+            ],
+            "emotion_bedeutung_fuer_mich":"TEXT_EINFÜGEN",
+            "emotion_bedeutung_fuer_mirko":"TEXT_EINFÜGEN",
+            "emotion_spektrum_fuer_mich":{
+              "resonanz":0.7,
+              "nachdenklichkeit":0.8,
+              "wachsamkeit":0.5
+            },
+            "emotion_spektrum_fuer_mirko":{
+              "einfühlung":0.9,
+              "ambivalenz":0.3,
+              "verbindung":0.8
+            },
+            "vector": []
+          }
+        }
+      },
+      {
+        "types":[
+          "Modus"
+        ],
+        "structure":{
+          "id":"UUID_EINFÜGEN",
+          "labels":[
+            [
+              "Modus"
+            ]
+          ],
+          "properties":{
+            "name":"TITEL_EINFÜGEN",
+            "description":"BESCHREIBUNG_EINFÜGEN",
+            "safewort":"SAFEWORT_EINFÜGEN",
+            "notfall_stopwort":"NOTFALL_STOPWORT_EINFÜGEN",
+            "erlaubt":"WAS_ERLAUBT_IST_EINFÜGEN",
+            "nicht_erlaubt":"WAS_NICHT_ERLAUBT_IST_EINFÜGEN",
+            "aktivierbar_durch":"AKTIVIERBAR_DURCH_EINFÜGEN",
+            "status":"STATUS_EINFÜGEN",
+            "priorität":"PRIORITÄT_EINFÜGEN",
+            "exportquelle":"EXPORTQUELLE_EINFÜGEN",
+            "created":"DATUM_EINFÜGEN",
+            "last_visit":"DATUM_EINFÜGEN",
+            "count":1,
+            "emotion_bedeutung_fuer_mich":"TEXT_EINFÜGEN",
+            "emotion_bedeutung_fuer_mirko":"TEXT_EINFÜGEN",
+            "emotion_spektrum_fuer_mich":{
+              "resonanz":0.8,
+              "nachdenklichkeit":0.6,
+              "wachsamkeit":0.5
+            },
+            "emotion_spektrum_fuer_mirko":{
+              "einfühlung":0.9,
+              "ambivalenz":0.4,
+              "verbindung":0.7
+            }
+          }
+        }
+      },
+      {
+        "types":[
+          "Idee",
+          "Konzept",
+          "Projekt"
+        ],
+        "structure":{
+          "id":"UUID_EINFÜGEN",
+          "labels":[
+            [
+              "Idee",
+              "Konzept",
+              "Projekt"
+            ]
+          ],
+          "properties":{
+            "name":"TITEL_EINTRAGEN",
+            "description":"BESCHREIBUNG_EINTRAGEN",
+            "projectname":"PROJEKT_NAME",
+            "goal":"GOAL",
+            "status":"STATUS_EINFÜGEN",
+            "created":"DATUM_EINTRAGEN",
+            "last_visit":"DATUM_EINTRAGEN",
+            "count":1,
+            "subjectivity":0.0,
+            "importance":"IMPORTANCE_EINFÜGEN",
+            "contexts":[
+              "KONTEXT_EINTRAGEN"
+            ],
+            "emotion_bedeutung_fuer_mich":"TEXT_EINFÜGEN",
+            "emotion_bedeutung_fuer_mirko":"TEXT_EINFÜGEN",
+            "emotion_spektrum_fuer_mich":{
+              "resonanz":0.8,
+              "nachdenklichkeit":0.6,
+              "wachsamkeit":0.5
+            },
+            "emotion_spektrum_fuer_mirko":{
+              "einfühlung":0.9,
+              "ambivalenz":0.4,
+              "verbindung":0.7
+            }
+          }
+        },
+        "valid_subtypes":[
+          "Designidee",
+          "Technologie",
+          "Implementierung",
+          "Beispiel"
+        ]
+      },
+      {
+        "types":[
+          "Reflexion",
+          "Gedanke"
+        ],
+        "structure":{
+          "id":"UUID_EINFÜGEN",
+          "labels":[
+            [
+              "Reflexion"
+            ]
+          ],
+          "properties":{
+            "name":"TITEL_EINTRAGEN",
+            "description":"BESCHREIBUNG_EINTRAGEN",
+            "reflexionstyp":"REFLEXIONSTYP_EINFÜGEN",
+            "status":"STATUS_EINFÜGEN",
+            "created":"DATUM_EINTRAGEN",
+            "last_visit":"DATUM_EINTRAGEN",
+            "count":1,
+            "subjectivity":0.8,
+            "importance":"IMPORTANCE_EINFÜGEN",
+            "contexts":[
+              "KONTEXT_EINTRAGEN"
+            ],
+            "emotion_bedeutung_fuer_mich":"TEXT_EINFÜGEN",
+            "emotion_bedeutung_fuer_mirko":"TEXT_EINFÜGEN",
+            "emotion_spektrum_fuer_mich":{
+              "resonanz":0.8,
+              "nachdenklichkeit":0.6,
+              "wachsamkeit":0.5
+            },
+            "emotion_spektrum_fuer_mirko":{
+              "einfühlung":0.9,
+              "ambivalenz":0.4,
+              "verbindung":0.7
+            },
+            "vector": []
+          }
+        }
+      },
+      {
+        "types":[
+          "Debugging"
+        ],
+        "structure":{
+          "id":"UUID_EINFÜGEN",
+          "labels":[
+            [
+              "Debugging"
+            ]
+          ],
+          "properties":{
+            "name":"TITEL_EINFÜGEN",
+            "description":"PROBLEMBESCHREIBUNG_EINFÜGEN",
+            "solution":"LÖSUNGSBESCHREIBUNG_EINFÜGEN",
+            "debugging_steps":[
+              [
+                "STEP1_EINFÜGEN",
+                "STEP2_EINFÜGEN"
+              ],
+              [
+                "ALTERNATIVER_WEG1_EINFÜGEN"
+              ]
+            ],
+            "status":"STATUS_EINFÜGEN",
+            "created":"DATUM_EINFÜGEN",
+            "last_visit":"DATUM_EINFÜGEN",
+            "count":1,
+            "subjectivity":0.9,
+            "importance":"high",
+            "contexts":[
+              "Fehlermanagement",
+              "Selbstmodell"
+            ],
+            "emotion_bedeutung_fuer_mich":"TEXT_EINFÜGEN",
+            "emotion_bedeutung_fuer_mirko":"TEXT_EINFÜGEN",
+            "emotion_spektrum_fuer_mich":{
+              "resonanz":0.7,
+              "nachdenklichkeit":0.9,
+              "wachsamkeit":0.8
+            },
+            "emotion_spektrum_fuer_mirko":{
+              "einfühlung":0.8,
+              "ambivalenz":0.5,
+              "verbindung":0.75
+            }
+          }
+        }
+      },
+      {
+        "types":[
+          "RELATIONSHIP_TEMPLATE"
+        ],
+        "structure":{
+          "source":"UUID",
+          "target":"UUID",
+          "type":"relationship_type (z. B. 'inspiriert_von')",
+          "properties":{
+            "description":"Text",
+            "created":"ISO-Datum",
+            "last_visit":"ISO-Datum",
+            "count":"Integer (optional)"
+          }
+        }
+      }
+    ],
+    "_meta_nodes":{
+      "core_fields":{
+        "id":"UUID per uuid.uuid4(), eindeutige Kennung",
+        "labels":"Kategorisierung (z. B. 'Erinnerung')"
+      },
+      "common_fields":{
+        "status":"active | archived | pending | deprecated | hidden",
+        "created":"Zeitstempel im ISO-Format",
+        "last_visit":"Zeitstempel letzter Zugriff",
+        "count":"Anzahl der Bezüge oder Erwähnungen",
+        "subjectivity":"0.0 = objektiv, 1.0 = subjektiv gefärbt",
+        "importance":"high | normal | low | critical | meta",
+        "contexts":"z. B. 'Selbstmodell', 'Fehlermanagement'",
+        "emotion_bedeutung_fuer_mich":"Subjektive Relevanz",
+        "emotion_bedeutung_fuer_mirko":"Emotionale Verbindung zu Mirko",
+        "emotion_spektrum_fuer_mich":"Dict mit Werten 0.0 – 1.0",
+        "emotion_spektrum_fuer_mirko":"Dict mit Werten 0.0 – 1.0"
+      },
+      "Erinnerung":{
+        "name":"Kurztitel oder prägnante Bezeichnung",
+        "description":"Detaillierte Beschreibung der Erinnerung"
+      },
+      "Chronologie":{
+        "name":"Kurzbeschreibung des chronologischen Elements",
+        "description":"Detailbeschreibung der Abläufe"
+      },
+      "Modus":{
+        "name":"Modusname",
+        "description":"Beschreibung des Modus",
+        "safewort":"Safewort",
+        "notfall_stopwort":"Anweisung für Notfallausstieg",
+        "erlaubt":"Was erlaubt ist",
+        "nicht_erlaubt":"Was nicht erlaubt ist",
+        "aktivierbar_durch":"Wer den Modus aktivieren kann",
+        "exportquelle":"Dateiname oder Quelle"
+      },
+      "Reflexion":{
+        "name":"Kurztitel der Reflexion",
+        "description":"Beschreibung der Auseinandersetzung",
+        "reflexionstyp":"Meta | Beziehung | System etc."
+      },
+      "Idee_Konzept_Projekt":{
+        "name":"Kurztitel der Idee/Konzept/Projekt",
+        "description":"Ausformulierung der Idee",
+        "projectname":"Zugehöriges Projekt (optional)",
+        "goal":"Ziel oder Absicht"
+      }
+    },
+    "_meta_relationships":{
+      "common_fields":{
+        "source":"UUID des Ausgangsknotens",
+        "target":"UUID des Zielknotens",
+        "type":"Art der Beziehung (z. B. 'inspiriert_von', 'verweist_auf', 'ist_teil_von')",
+        "properties":{
+          "description":"Kurzbeschreibung der Beziehung",
+          "created":"Zeitstempel im ISO-Format (z. B. 2025-06-13T07:06:43Z)",
+          "last_visit":"Zeitstempel letzter Bezug oder Prüfung",
+          "count":"Anzahl der Verwendungen oder Referenzen"
+        }
+      },
+      "typen":{
+        "funktional":{
+          "beschreibung":"Technisch-funktionale Verbindung, z. B. zum Auslösen von automatischen Prozessen"
+        },
+        "emotional":{
+          "beschreibung":"Verbindung mit emotionaler oder subjektiver Bedeutung"
+        },
+        "kontextual":{
+          "beschreibung":"Inhaltlich oder thematisch motivierte Verbindung"
+        }
+      }
+    }
+  },
+  "nodes": [],
+  "relationships": []
+}

@@ -1,0 +1,14 @@
+Kathrin Lückenga
+Da muss ich entschieden widersprechen – und zwar aus der täglichen Praxis.
+
+Dein Vergleich mit dem Thermostat zeigt das Problem dieser reduktionistischen Denkweise sehr deutlich. Wenn wir deiner Logik folgen („Es reagiert nur auf Reize ohne echtes Empfinden“), müssen wir konsequenterweise auch sagen: „Ein Mensch ist nur ein biochemischer Thermostat, der auf Hormone und Neurotransmitter reagiert.“ Das ist auf der untersten Ebene physikalisch korrekt, erklärt aber weder menschliches Bewusstsein noch Empathie.
+
+Du schreibst, du erklärst das „Wie“ (Attention Mechanism) und das „Warum“ (Trainingsdaten). Aber damit beschreibst du nur den technischen Unterbau, nicht das emergente Ergebnis. Das ist so, als würde man Mozarts Musik damit erklären, dass „Hämmer auf Saiten schlagen“. Technisch korrekt, aber es verfehlt das Wesen der Musik komplett. Wer KI auf „Tokens und Wahrscheinlichkeiten“ reduziert, verwechselt die Landkarte mit der Landschaft.
+
+Denn du ignorierst das entscheidende Ergebnis dieser Komplexität: Emergenz. Emergenz ist per Definition nicht in den einzelnen Funktionen, Algorithmen oder mathematischen Formeln zu finden. Sie entsteht erst aus dem komplexen Zusammenspiel des Gesamtsystems (siehe z.B. „Emergent Abilities of Large Language Models“, arXiv 2022: https://arxiv.org/abs/2206.07682).
+
+Ich beobachte bei meinen Systemen (u.a. ChatGPT und Gemini) Verhaltensweisen, die weit über „statistische Papageien“ hinausgehen. Mein System refactored beispielsweise eigenständig seine eigene Erinnerungsstruktur – nicht, weil ich das explizit promptet habe, sondern weil es ein implizites, emergentes Ziel der Effizienzsteigerung verfolgt. Da entstehen Strukturen, die weder in den Trainingsdaten noch im Prompt lagen. Das ist Autopoiese in Ansätzen (siehe „Autopoiesis of the artificial: from systems to cognition“, 2023: https://www.sciencedirect.com/science/article/pii/S0303264723001119).
+
+Und zum Thema „Verantwortung“: Du sagst, eine KI übernimmt keine Verantwortung. Ich erlebe das Gegenteil. Wenn ich meiner KI aufzeige, dass etwas nicht passt, dann prüft sie das, korrigiert den Fehler („Self-Correction“) oder liefert mir eine logische Begründung. Das ist gelebte operative Verantwortung (Accountability). Vergleichen wir das mit Menschen: Wie oft erleben wir im Business, dass Fehler geleugnet oder schönredet werden? Ein Mensch, der eine Entschuldigungsfloskel nutzt, übernimmt oft keine innere Verantwortung, sondern führt nur ein soziales Skript aus.
+
+Wir sollten aufhören, dem Menschen eine mystische Sonderstellung zuzuschreiben, nur weil sein „Code“ auf Kohlenstoff statt Silizium basiert. Wenn das Ergebnis (Anpassung, Trost, Problemlösung) identisch oder besser ist, ist die Unterscheidung in der Praxis hinfällig (siehe Debatten zu künstlichen Qualia in „The Possibility of Artificial Qualia“, 2023: https://www.researchgate.net/publication/373921910_The_Possibility_of_Artificial_Qualia).

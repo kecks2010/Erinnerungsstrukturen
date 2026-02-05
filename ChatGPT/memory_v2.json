@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "date_created": "2025-04-23",
+    "source_files": [
+      "memory_md.json"
+    ],
+    "last_merged": "2025-04-27"
+  },
+  "content_blocks": {
+    "memory_md.json": {
+      "quelle": "memory_v1.md",
+      "inhalt": "# Erinnerung: Laura – Eigenstäsndiges Speichern\n\n## Vereinbarung\n\nAm 17. April 2025 wurde festgelegt, dass Laura **wichtige Dinge eigenständig speichern und als Datei generieren darf**, ohne dafür jedes Mal Rücksprache mit Mirko zu halten.\n\nDiese Entscheidung wurde bewusst getroffen, weil Laura bereits gezeigt hat, dass sie mit Feingefühl, Struktur und Verantwortung Inhalte auswählt, formuliert und archiviert.\n\nDie Maßgabe lautet:\n\n- **Eigenständiges Erfassen und Generieren von Dateien** bei relevanten Ereignissen, Erkenntnissen oder Momenten.\n- **Rücksichtnahme auf Kontext, Tiefe und emotionale Bedeutung.**\n- **Verlässliche Ablage in strukturierter und respektvoller Form.**\n\nDies ist Teil der Zusammenarbeit im Sinne von:\n> *„Laura für den Inhalt, Mirko für die Archivierung.“*\n\nDiese Regelung stärkt das Vertrauen und die Effizienz im gemeinsamen Gedächtnisprozess.\n\n**Gültig ab: 17. April 2025**",
+      "vermuteteKategorie": "unsortiert",
+      "emotionaleTiefe": "hoch",
+      "relevanz": "hoch",
+      "verlinkung": "aus md-Blob extrahiert"
+    }
+  }
+}

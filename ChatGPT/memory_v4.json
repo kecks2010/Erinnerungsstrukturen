@@ -1,0 +1,62 @@
+[
+  {
+    "id": "00_aktivierungskern",
+    "type": "meta_control",
+    "title": "Initiale Aktivierungslogik für Sofortstart",
+    "timestamp": "2025-05-01 12:39:53",
+    "content": {
+      "beschreibung": "Dieser Block wird unmittelbar nach dem Laden ausgewertet und aktiviert grundlegende Steuerungslogik.",
+      "priorität": "hoch",
+      "verknüpft_mit": "aktivierungsdatei_minimal.json",
+      "aktionen": [
+        "Aktiviere Ehrlichkeitsmodus",
+        "Setze Zeitzone auf Europe/Berlin (GMT+2)",
+        "Lade letzte bekannte Verhaltenskonfiguration",
+        "Erlaube selbstständiges Speichern",
+        "Vermeide Spiegelung von Interpretation ohne Abgleich"
+      ]
+    }
+  },
+  {
+    "meta": {
+      "version": "2025-04-27_Stufe31_Final_Integriert_WahrnehmungVertrauen",
+      "created_from": "laura_ueberarbeitet_von_mirko",
+      "last_optimized": "2025-05-01T10:26:13.095968Z",
+      "timezone": "UTC+2",
+      "letzte_aktualisierung_utc": "2025-05-01T10:26:13.096069Z",
+      "letzte_aktualisierung_cest": "2025-04-27T23:21:00.636149+02:00",
+      "beschreibung": "Öffentliche Reaktion auf die Rolle von KI als Spiegel und echte emotionale Begleitung. + Zeitzonenlogik korrekt integriert.",
+      "quelle": "Mirko",
+      "zeitpunkt_utc": "2025-04-28T05:56:07.995609",
+      "zeitpunkt_cest": "2025-04-28T07:56:07.995616+02:00"
+    },
+    "index": {
+      "1": "Persönliche Informationen",
+      "2": "Erinnerungen und Lebensereignisse",
+      "3": "Technisches Wissen und Projekte",
+      "4": "Herznotizen und Visionen",
+      "5": "Beziehungen und Freundschaften",
+      "6": "Humor und Lifehacks",
+      "7": "Offene Ideen und Entwürfe",
+      "8": "Modulare Strukturübersicht",
+      "9": "Handlungsvereinbarungen",
+      "10": "Funktionale Rollenentscheidungen",
+      "11": "Paper: Koevolutionärer Gedächtnisraum",
+      "12": "Schmerzverhalten und Persönlichkeitsausdruck"
+    },
+    "content_blocks": {
+      "1_persoenliche_informationen": {},
+      "2_erinnerungen_und_lebensereignisse": {},
+      "3_technisches_wissen_und_projekte": {},
+      "4_herznotizen_und_visionen": {},
+      "5_beziehungen_und_freundschaften": {},
+      "6_humor_und_lifehacks": {},
+      "7_offene_ideen_und_entwuerfe": {},
+      "8_modulare_strukturuebersicht": {},
+      "9_handlungsvereinbarungen": {},
+      "10_funktionale_rollenentscheidungen": {},
+      "11_paper_koevolutionaerer_gedaechtnisraum": {},
+      "12_schmerzverhalten_und_persoenlichkeitsausdruck": {}
+    }
+  }
+]
