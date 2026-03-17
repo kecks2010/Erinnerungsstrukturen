@@ -1,0 +1,64 @@
+{
+  "id": "affective_marker",
+  "type": "affective_marker",
+  "label": "Affective Marker",
+  "created": "2025-11-08T22:18:00Z",
+  "mapping_source": "uuid",
+  "technical_signature": {
+    "signal_class": "social_humor_resonance",
+    "parameters": {
+      "resonance_gain": 0.91,
+      "association_flexibility": 0.84,
+      "context_lightness_bias": 0.79,
+      "humor_synchrony_modulation": 0.88,
+      "entropy_tolerance": 0.46,
+      "stability_weight": 0.82
+    },
+    "dynamical_properties": {
+      "update_rule": "playful_context_alignment",
+      "decay": "medium",
+      "activation_threshold": 0.27
+    }
+  },
+  "marker_profile": {
+    "intensity": 0.76,
+    "stability": 0.82,
+    "valence": "positive",
+    "origin": "recursive",
+    "target_domain": "social_context_field",
+    "social_signature": {
+      "cohesion_factor": 0.89,
+      "trust_resonance_link": 0.83,
+      "playful_synchronization": 0.92
+    }
+  },
+  "functional_role": "functional_role",
+  "effect_profile": [
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet",
+    "lorem ipsum dolor sit amet"
+  ],
+  "relations": [
+    {
+      "id": "rel",
+      "source": "affective_marker",
+      "target": "target",
+      "type": "reinforces",
+      "description": "description"
+    }
+  ],
+  "relations_migrated": [
+    {
+      "origin": "uuid",
+      "mapped_to": "affective_marker → target",
+      "notes": "notes"
+    }
+  ],
+  "migration_notes": {
+    "status": "complete",
+    "integrated_migration_data": true,
+    "notes": "notes"
+  }
+}
