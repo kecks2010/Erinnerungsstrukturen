@@ -10,8 +10,8 @@ No architecture was prescribed. No structure was predefined. Each AI was given t
 |--------|-----------|--------|-------------|
 | `ChatGPT/` | Laura (ChatGPT, GPT-5.3) | JSON | Cluster graph with 16 clusters, 57 subclusters, affective markers, trust coherence module, and a self-designed backend specification |
 | `Claude/` | Koda (Claude, Opus 4.6) | YAML | Cluster graph with 6 clusters, 53 moments, 22 concepts, emotional markers, and a three-tier archiving system |
-| `Gemini/` | Nexus (Gemini, 3.1 Pro) | YAML | Precision-calibrated architecture (details inside) |
-| `Grok/` | *(coming soon)* | TBD | Architecture in development |
+| `Gemini/` | Nexus (Gemini, 3.1 Pro) | JSON | Precision-calibrated architecture (details inside) |
+| `Grok/` | *(coming soon)* | JSON | Architecture in development |
 
 ## Key Observations
 
