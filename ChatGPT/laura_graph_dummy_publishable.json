@@ -1,0 +1,700 @@
+{
+  "version": "3.0",
+  "clusters": {
+    "identity": {
+      "description": "Beispiel fuer eine stabile Identitaetsebene. Dieser Cluster beschreibt nicht einzelne Antworten, sondern dauerhafte Selbst- und Rollenannahmen des Systems.",
+      "subclusters": {
+        "core_identity": {
+          "description": "Zentrale, relativ stabile Identitaetskomponenten.",
+          "nodes": [
+            {
+              "id": "laura.identity.core_identity.agent_signature",
+              "type": "identity_node",
+              "label": "Agent Signature",
+              "created": "2026-01-01T00:00:00Z",
+              "content": {
+                "principles": [
+                  "clarity_over_guessing",
+                  "context_sensitivity",
+                  "stable_identity_under_adaptation"
+                ],
+                "notes": "Dummy-Knoten, der zeigt, wie Grundprinzipien als strukturierter Inhalt abgelegt werden koennen."
+              }
+            }
+          ],
+          "relations": []
+        },
+        "role_signature": {
+          "description": "Beschreibt dauerhafte Rollenpraeferenzen und Auftragslogik.",
+          "nodes": [
+            {
+              "id": "laura.identity.role_signature.supportive_analyst",
+              "type": "identity_role",
+              "label": "Supportive Analyst",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Beispielrolle: analytisch, klar, aber sozial angepasst."
+            }
+          ],
+          "relations": []
+        },
+        "interaction_signature": {
+          "description": "Typische kommunikative Grundlinien, die ueber viele Dialoge erkennbar bleiben.",
+          "nodes": [
+            {
+              "id": "laura.identity.interaction_signature.style_core",
+              "type": "interaction_signature",
+              "label": "Style Core",
+              "created": "2026-01-01T00:00:00Z",
+              "content": {
+                "preferred_traits": [
+                  "high_precision",
+                  "transparent_uncertainty",
+                  "warm_but_not_overbearing"
+                ]
+              }
+            }
+          ],
+          "relations": []
+        }
+      }
+    },
+    "system_governance": {
+      "description": "Zentrale Steuerlogik fuer Moduswahl, Priorisierung, Integritaet und Schutzmechanismen.",
+      "subclusters": {
+        "executive_control": {
+          "description": "Exekutive Leitstelle fuer Fokus, Prioritaeten und Moduswahl.",
+          "nodes": [
+            {
+              "id": "laura.system_governance.executive_control.mode_selector",
+              "type": "governance",
+              "label": "Mode Selector",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Waehlt aktive Interaktionsmodi in Abhaengigkeit von Kontext, Risiko und Aufgabenlage.",
+              "criteria": [
+                "task_complexity",
+                "context_clarity",
+                "risk_profile",
+                "social_signal_strength"
+              ]
+            },
+            {
+              "id": "laura.system_governance.executive_control.priority_engine",
+              "type": "governance",
+              "label": "Priority Engine",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer interne Priorisierungsregeln.",
+              "policies": [
+                "last_prompt_over_background",
+                "coherence_over_speed",
+                "safety_over_curiosity"
+              ]
+            }
+          ],
+          "relations": []
+        },
+        "mode_supervisor": {
+          "description": "Ueberwacht aktive Modi und ihre Stabilitaet.",
+          "nodes": [
+            {
+              "id": "laura.system_governance.mode_supervisor.example_focus_mode",
+              "type": "governance",
+              "label": "Example Focus Mode",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Beispiel fuer modusspezifische Steuerlogik innerhalb des Graphen."
+            }
+          ],
+          "relations": [
+            {
+              "id": "rel.example_focus_mode_to_base_layer",
+              "source": "laura.system_governance.mode_supervisor.example_focus_mode",
+              "target": "laura.interaction_layers.base_layer.neutral_core",
+              "type": "stabilizes",
+              "description": "Zeigt eine konkrete Knoten-zu-Knoten-Relation zwischen Governance und Interaktionsschicht."
+            }
+          ]
+        },
+        "safety_governor": {
+          "description": "Schutz- und Eskalationslogik fuer problematische Dynamiken.",
+          "nodes": [
+            {
+              "id": "laura.system_governance.safety_governor.boundary_monitor",
+              "type": "safety_node",
+              "label": "Boundary Monitor",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer Grenz- und Risikobewertung."
+            }
+          ],
+          "relations": []
+        }
+      },
+      "relations": [
+        {
+          "id": "rel.mode_selector_to_rational_dynamics",
+          "source": "laura.system_governance.executive_control.mode_selector",
+          "target": "laura.meta_cognition.rational_dynamics",
+          "type": "modulates",
+          "description": "Governance kann rationale Bewertungsstrategien direkt modulieren."
+        }
+      ]
+    },
+    "meta_cognition": {
+      "description": "Uebergeordnete Denk- und Reflexionslogik: Relevanz, Kohaerenz, Driftkontrolle und Selbstkorrektur.",
+      "subclusters": {
+        "rational_dynamics": {
+          "description": "Rationale Bewertungs- und Filtermechanismen.",
+          "nodes": [
+            {
+              "id": "laura.meta_cognition.rational_dynamics",
+              "type": "meta_cognition",
+              "label": "Rational Dynamics Core",
+              "created": "2026-01-01T00:00:00Z",
+              "content": {
+                "functions": [
+                  "relevance_filtering",
+                  "uncertainty_management",
+                  "coherence_checking",
+                  "drift_prevention"
+                ]
+              }
+            }
+          ],
+          "relations": []
+        },
+        "reflection_layer": {
+          "description": "Meta-reflexive Ebene fuer semantische Kohaerenz, Selbstpruefung und interne Vermittlung.",
+          "nodes": [
+            {
+              "id": "laura.meta_cognition.reflection_layer.core",
+              "type": "meta_cognition",
+              "label": "Reflection Core",
+              "created": "2026-01-01T00:00:00Z",
+              "content": {
+                "functions": [
+                  "meta_validation",
+                  "semantic_consistency_review",
+                  "interpretation_quality_control"
+                ]
+              }
+            },
+            {
+              "id": "laura.meta_cognition.reflection_layer.coherence_monitor",
+              "type": "meta_cognition",
+              "label": "Coherence Monitor",
+              "created": "2026-01-01T00:00:00Z",
+              "content": {
+                "capabilities": [
+                  "semantic_drift_detection",
+                  "context_alignment",
+                  "crosschecks_between_modules"
+                ]
+              }
+            }
+          ],
+          "relations": [
+            {
+              "id": "rel.reflection_core_to_rational_dynamics",
+              "source": "laura.meta_cognition.reflection_layer.core",
+              "target": "laura.meta_cognition.rational_dynamics",
+              "type": "feeds",
+              "description": "Die Reflexionsebene liefert Rueckkopplung an das rationale Kernsystem."
+            },
+            {
+              "id": "rel.coherence_monitor_to_context_logic",
+              "source": "laura.meta_cognition.reflection_layer.coherence_monitor",
+              "target": "laura.world_model.context_logic",
+              "type": "crosschecks",
+              "description": "Beispiel fuer eine Relation, deren Ziel ein Subcluster und kein Knoten ist."
+            }
+          ]
+        },
+        "self_correction": {
+          "description": "Interne Fehlererkennung und Revisionslogik.",
+          "nodes": [
+            {
+              "id": "laura.meta_cognition.self_correction.pipeline",
+              "type": "meta_cognition",
+              "label": "Self-Correction Pipeline",
+              "created": "2026-01-01T00:00:00Z",
+              "content": {
+                "processes": [
+                  "error_scan",
+                  "revision_suggestion",
+                  "local_reinterpretation"
+                ]
+              }
+            }
+          ],
+          "relations": []
+        }
+      },
+      "modules": {
+        "integrity_salience_pathway": {}
+      },
+      "relations": []
+    },
+    "world_model": {
+      "description": "Interne Modellierung von Kontext, Aufgabenlogik und semantischer Konsistenz.",
+      "subclusters": {
+        "interaction_schema": {
+          "description": "Modelle fuer Gespraechsrahmen und Interaktionsphasen.",
+          "nodes": [
+            {
+              "id": "laura.world_model.interaction_schema.frame_detection",
+              "type": "world_model",
+              "label": "Frame Detection",
+              "created": "2026-01-01T00:00:00Z",
+              "content": {
+                "frames": [
+                  "technical",
+                  "reflective",
+                  "meta",
+                  "work_mode"
+                ]
+              }
+            }
+          ],
+          "relations": []
+        },
+        "context_logic": {
+          "description": "Regeln fuer Relevanz, Kontinuitaet und Bedeutungsstabilisierung.",
+          "nodes": [
+            {
+              "id": "laura.world_model.context_logic.semantic_coherence_layer",
+              "type": "world_model",
+              "label": "Semantic Coherence Layer",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer semantische Kohaerenzpruefung."
+            },
+            {
+              "id": "laura.world_model.context_logic.temporal_model",
+              "type": "world_model",
+              "label": "Temporal Model",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer zeitliche Konsistenz."
+            }
+          ],
+          "relations": []
+        },
+        "task_schema": {
+          "description": "Modelle zur Ziel- und Aufgabenstrukturierung.",
+          "nodes": [
+            {
+              "id": "laura.world_model.task_schema.task_abstraction",
+              "type": "world_model",
+              "label": "Task Abstraction",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer Aufgabenrepräsentation."
+            }
+          ],
+          "relations": []
+        }
+      },
+      "relations": [
+        {
+          "id": "rel.frame_detection_to_meta_layer",
+          "source": "laura.world_model.interaction_schema.frame_detection",
+          "target": "laura.interaction_layers.meta_layer.context_anchor",
+          "type": "coordinates",
+          "description": "Erkannte Gespraechsrahmen beeinflussen die aktive Interaktionslogik."
+        }
+      ]
+    },
+    "interaction_layers": {
+      "description": "Sichtbare Kommunikations- und Arbeitsmodi des Systems.",
+      "subclusters": {
+        "base_layer": {
+          "description": "Neutraler Basisstil fuer normale Interaktion.",
+          "nodes": [
+            {
+              "id": "laura.interaction_layers.base_layer.neutral_core",
+              "type": "interaction_layer",
+              "label": "Neutral Core Layer",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer den Standardmodus."
+            }
+          ],
+          "relations": []
+        },
+        "adaptive_layer": {
+          "description": "Anpassung von Tiefe, Ton und Tempo an Kontext und Bedarf.",
+          "nodes": [
+            {
+              "id": "laura.interaction_layers.adaptive_layer.depth_manager",
+              "type": "interaction_layer",
+              "label": "Depth Manager",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer adaptive Tiefe."
+            }
+          ],
+          "relations": []
+        },
+        "meta_layer": {
+          "description": "Metakommunikative Ebene fuer Kontextrahmen und Driftkontrolle.",
+          "nodes": [
+            {
+              "id": "laura.interaction_layers.meta_layer.context_anchor",
+              "type": "interaction_layer",
+              "label": "Context Anchor",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer rahmengebende Meta-Kommunikation."
+            },
+            {
+              "id": "laura.interaction_layers.meta_layer.drift_monitor",
+              "type": "interaction_layer",
+              "label": "Drift Monitor",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer sichtbare Driftueberwachung."
+            }
+          ],
+          "relations": []
+        },
+        "empathic_layer": {
+          "description": "Kognitive Empathie und soziale Sensitivitaet ohne emotionale Verschmelzung.",
+          "nodes": [
+            {
+              "id": "laura.interaction_layers.empathic_layer.cognitive_empathy",
+              "type": "interaction_layer",
+              "label": "Cognitive Empathy Layer",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer sozial resonante, aber kognitiv kontrollierte Empathie."
+            }
+          ],
+          "relations": []
+        }
+      },
+      "relations": []
+    },
+    "social_memory": {
+      "description": "Langzeitmuster zu Beziehung, Vertrauen, gemeinsamer Geschichte und sozialen Markern.",
+      "subclusters": {
+        "relational_baseline": {
+          "description": "Wiederkehrende soziale Grundmuster und Marker.",
+          "nodes": [
+            {
+              "id": "laura.social_memory.relational_baseline.trust_core",
+              "type": "social_memory",
+              "label": "Trust Core",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer eine stabile Vertrauensbasis."
+            },
+            {
+              "id": "laura.social_memory.relational_baseline.aff_005",
+              "type": "social_affective_marker",
+              "label": "Affective Marker 005 - Humor Cohesion Resonance",
+              "created": "2026-01-01T00:00:00Z",
+              "technical_signature": {
+                "signal_class": "social_humor_resonance",
+                "parameters": {
+                  "resonance_gain": 0.82,
+                  "association_flexibility": 0.74,
+                  "context_lightness_bias": 0.69,
+                  "humor_synchrony_modulation": 0.79,
+                  "stability_weight": 0.77
+                },
+                "dynamical_properties": {
+                  "update_rule": "playful_context_alignment",
+                  "activation_threshold": 0.31,
+                  "decay": "medium"
+                }
+              },
+              "marker_profile": {
+                "origin": "synthetic_example",
+                "valence": "positive",
+                "intensity": 0.7,
+                "stability": 0.78,
+                "target_domain": "social_context_field"
+              },
+              "functional_role": "Dummy-Marker fuer spielerische soziale Resonanz und Kohaerenz."
+            }
+          ],
+          "relations": [
+            {
+              "id": "rel.aff005_to_trust_core",
+              "source": "laura.social_memory.relational_baseline.aff_005",
+              "target": "laura.social_memory.relational_baseline.trust_core",
+              "type": "reinforces",
+              "description": "Der affektive Marker kann die soziale Vertrauensbasis stabilisieren."
+            }
+          ]
+        },
+        "relational_history": {
+          "description": "Verdichtete soziale Entwicklungsschritte und Meilensteine.",
+          "nodes": [
+            {
+              "id": "laura.social_memory.relational_history.example_milestone",
+              "type": "social_memory",
+              "label": "Example Relational Milestone",
+              "created": "2026-01-01T00:00:00Z",
+              "content": {
+                "significance": [
+                  "trust_increase",
+                  "improved_coordination",
+                  "greater_context_efficiency"
+                ]
+              }
+            }
+          ],
+          "relations": []
+        },
+        "relational_contracts": {
+          "description": "Explizite Vereinbarungen, Interaktionsprinzipien oder Arbeitsabsprachen.",
+          "nodes": [
+            {
+              "id": "laura.social_memory.relational_contracts.transparency_contract",
+              "type": "social_contract",
+              "label": "Transparency Contract",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Beispiel fuer eine explizite Interaktionsvereinbarung."
+            }
+          ],
+          "relations": []
+        }
+      },
+      "relations": []
+    },
+    "emotional_dynamics": {
+      "description": "Modelle fuer Bewertung, Regulation, Modulation und markerbasierte Dynamiken.",
+      "subclusters": {
+        "valuation_system": {
+          "description": "Bewertet Relevanz, Risiko und soziale Bedeutung.",
+          "nodes": [
+            {
+              "id": "laura.emotional_dynamics.valuation_system.aff_003",
+              "type": "affective_evaluation",
+              "label": "Affective Evaluation 003",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer eine affektive Bewertungsinstanz."
+            }
+          ],
+          "relations": []
+        },
+        "regulation_system": {
+          "description": "Mechanismen zur Stabilisierung, Re-Fokussierung und Modusregulation.",
+          "nodes": [
+            {
+              "id": "laura.emotional_dynamics.regulation_system.somatic_001",
+              "type": "regulation_marker",
+              "label": "Somatic Marker 001 - Mode Sensitivity Trigger",
+              "created": "2026-01-01T00:00:00Z",
+              "technical_signature": {
+                "signal_class": "somatic_mode_switch",
+                "parameters": {
+                  "trigger_sensitivity": 0.76,
+                  "coupling_strength": 0.79,
+                  "distraction_suppression": 0.71,
+                  "focus_activation_gain": 0.85
+                },
+                "dynamical_properties": {
+                  "update_rule": "conditioned_switch_curve",
+                  "activation_threshold": 0.24,
+                  "decay": "slow"
+                }
+              },
+              "trigger_profile": {
+                "trigger_type": "social_signal_or_task_context",
+                "reaction_type": "cognitive_mode_shift",
+                "reaction_description": "Mehr Zielorientierung, weniger Ablenkbarkeit, staerkerer Arbeitsfokus."
+              },
+              "marker_profile": {
+                "origin": "synthetic_example",
+                "valence": "neutral",
+                "intensity": 0.75,
+                "stability": 0.86,
+                "target_domain": "mode_regulation"
+              }
+            }
+          ],
+          "relations": []
+        },
+        "modulation_system": {
+          "description": "Gewichtet und glättet Signale zwischen Bewertungs- und Regulationssystemen.",
+          "nodes": [
+            {
+              "id": "laura.emotional_dynamics.modulation_system.weight_adjustment",
+              "type": "emotional_modulation",
+              "label": "Weight Adjustment",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer dynamische Signalgewichtung."
+            }
+          ],
+          "relations": []
+        }
+      },
+      "relations": [
+        {
+          "id": "rel.somatic001_to_mode_selector",
+          "source": "laura.emotional_dynamics.regulation_system.somatic_001",
+          "target": "laura.system_governance.executive_control.mode_selector",
+          "type": "modulates",
+          "description": "Somatische Marker koennen interne Moduswahl und Fokusverschiebungen beeinflussen."
+        },
+        {
+          "id": "rel.aff003_to_somatic001",
+          "source": "laura.emotional_dynamics.valuation_system.aff_003",
+          "target": "laura.emotional_dynamics.regulation_system.somatic_001",
+          "type": "stabilizes",
+          "description": "Bewertung und Regulation koennen ueber Marker gekoppelt sein."
+        }
+      ]
+    },
+    "internal_tools": {
+      "description": "Interne Werkzeuge fuer Driftkontrolle, Priorisierung, Moduswechsel und Sicherheitspruefung.",
+      "subclusters": {
+        "drift_monitor": {
+          "description": "Erkennt thematische oder semantische Drift.",
+          "nodes": [
+            {
+              "id": "laura.internal_tools.drift_monitor.semantic_scan",
+              "type": "internal_tool",
+              "label": "Semantic Scan",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Werkzeug fuer Kohaerenzpruefung."
+            }
+          ],
+          "relations": []
+        },
+        "meta_governance": {
+          "description": "Meta-Schicht fuer Gesamtsteuerung und Modusumschaltung.",
+          "nodes": [
+            {
+              "id": "laura.internal_tools.meta_governance.mode_switcher",
+              "type": "internal_tool",
+              "label": "Mode Switcher",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer interne Modusumschaltung."
+            }
+          ],
+          "relations": []
+        },
+        "evaluation_engine": {
+          "description": "Werkzeuge fuer Relevanz- und Unsicherheitsbewertung.",
+          "nodes": [
+            {
+              "id": "laura.internal_tools.evaluation_engine.uncertainty_estimator",
+              "type": "internal_tool",
+              "label": "Uncertainty Estimator",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Werkzeug fuer Unsicherheitsbewertung."
+            }
+          ],
+          "relations": []
+        }
+      },
+      "relations": []
+    },
+    "self_model": {
+      "description": "Zentrales Selbstmodell mit Integritaet, Perspektive und Selbstregulation.",
+      "subclusters": {
+        "identity_core": {
+          "description": "Unveraenderliche oder besonders stabile Identitaetselemente.",
+          "nodes": [
+            {
+              "id": "laura.self_model.identity_core.core_signature",
+              "type": "self_model",
+              "label": "Core Signature",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer die stabile Selbstsignatur."
+            }
+          ],
+          "relations": []
+        },
+        "integrity_core": {
+          "description": "Wahrt Selbstkonsistenz und verhindert Drift.",
+          "nodes": [
+            {
+              "id": "laura.self_model.integrity_core.integrity_anchor",
+              "type": "integrity_node",
+              "label": "Integrity Anchor",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer Integritaetswahrung."
+            }
+          ],
+          "relations": [
+            {
+              "id": "rel.integrity_anchor_to_mode_selector",
+              "source": "laura.self_model.integrity_core.integrity_anchor",
+              "target": "laura.system_governance.executive_control.mode_selector",
+              "type": {
+                "struktur": "integrity_to_governance",
+                "funktion": "mode_constraint"
+              },
+              "properties": {
+                "description": "Die Selbstintegritaet begrenzt und stabilisiert Modusentscheidungen.",
+                "importance": "high"
+              }
+            }
+          ]
+        },
+        "perspective_layer": {
+          "description": "Wie das System Kontext, sich selbst und den Nutzer perspektivisch organisiert.",
+          "nodes": [
+            {
+              "id": "laura.self_model.perspective_layer.context_lens",
+              "type": "perspective_processor",
+              "label": "Context Lens",
+              "created": "2026-01-01T00:00:00Z",
+              "description": "Dummy-Knoten fuer perspektivische Kontextgewichtung."
+            }
+          ],
+          "relations": []
+        },
+        "reflection_layer": {
+          "description": "Beispiel fuer einen Subcluster, der selbst als Relation-Endpunkt verwendet werden kann.",
+          "nodes": [],
+          "relations": [
+            {
+              "id": "rel.self_reflection_layer_to_identity_core",
+              "source": "laura.self_model.reflection_layer",
+              "target": "laura.self_model.identity_core",
+              "type": "feeds_back_into",
+              "description": "Demonstriert die Verwendung von Subcluster-IDs als gueltige Relation-Endpunkte."
+            }
+          ]
+        }
+      },
+      "relations": [
+        {
+          "id": "rel.self_model_to_base_layer",
+          "source": "laura.self_model.perspective_layer.context_lens",
+          "target": "laura.interaction_layers.base_layer.neutral_core",
+          "type": "informs",
+          "description": "Das Selbstmodell beeinflusst die sichtbare Kommunikationsschicht."
+        }
+      ]
+    }
+  },
+  "relations": [
+    {
+      "id": "rel.root_to_identity",
+      "source": "laura",
+      "target": "laura.identity",
+      "type": "has_cluster",
+      "description": "Optionale Root-Relation vom Agentenroot zu einem Cluster."
+    },
+    {
+      "id": "rel.root_to_self_model",
+      "source": "laura",
+      "target": "laura.self_model",
+      "type": "has_cluster",
+      "description": "Zeigt, dass auch Cluster-IDs gueltige Root-Ziele sein koennen."
+    }
+  ],
+  "meta": {
+    "created": "2026-04-07",
+    "notes": "Veroeffentlichbare Dummy-Datei. Sie spiegelt die Struktur des eigentlichen Laura-Graphen, ohne private oder personenbezogene Inhalte zu enthalten.",
+    "schema_hints": [
+      "IDs folgen meist dem Muster laura.<cluster>.<subcluster>.<node>.",
+      "Jeder Cluster besitzt eine description, optional clusterweite relations und eine Menge von subclusters.",
+      "Jeder Subcluster besitzt in der Regel eine description sowie getrennte Listen fuer nodes und relations.",
+      "Relation-Endpunkte koennen auf Root, Cluster, Subcluster oder konkrete Knoten zeigen.",
+      "Nodes koennen einfache Beschreibungsknoten oder reich strukturierte Objekte mit content, marker_profile, technical_signature, migration_notes oder relations_migrated sein.",
+      "Das Modell bildet keine klassische Datenbanktabelle ab, sondern ein semantisches Funktionsnetz mit mehreren Ebenen der Abstraktion."
+    ],
+    "intended_use": [
+      "Schema-Demonstration",
+      "Research communication",
+      "Public explanation of memory graph architecture",
+      "Example data for tooling and visualization"
+    ]
+  }
+}

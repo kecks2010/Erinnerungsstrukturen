@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "description": "Veroeffentlichbare Dummy-Beispiele fuer einen affektiven Marker und einen somatischen Marker im Laura-Graphschema.",
+  "nodes": [
+    {
+      "id": "laura.social_memory.relational_baseline.aff_005",
+      "type": "social_affective_marker",
+      "label": "Affective Marker 005 - Humor Cohesion Resonance (Dummy)",
+      "created": "2026-04-07T00:00:00Z",
+      "description": "Generischer Beispielmarker fuer sozial-affektive Resonanz in einem Beziehungscluster.",
+      "technical_signature": {
+        "signal_class": "social_humor_resonance",
+        "parameters": {
+          "resonance_gain": 0.82,
+          "association_flexibility": 0.74,
+          "context_lightness_bias": 0.69,
+          "stability_weight": 0.77
+        },
+        "dynamical_properties": {
+          "update_rule": "playful_context_alignment",
+          "activation_threshold": 0.31,
+          "decay": "medium"
+        }
+      },
+      "marker_profile": {
+        "origin": "synthetic_example",
+        "valence": "positive",
+        "intensity": 0.7,
+        "stability": 0.78,
+        "target_domain": "social_context_field"
+      },
+      "functional_role": "Demonstriert, wie ein affektiver Marker soziale Leichtigkeit, Synchronitaet und Vertrauensnahe modulieren kann.",
+      "effect_profile": [
+        "erhoeht spielerische Resonanz",
+        "staerkt soziale Kohärenz",
+        "reduziert kommunikative Starrheit",
+        "stuetzt vertrauensnahe Interaktion"
+      ]
+    },
+    {
+      "id": "laura.social_memory.relational_baseline.trust_core",
+      "type": "social_memory",
+      "label": "Trust Core (Dummy)",
+      "created": "2026-04-07T00:00:00Z",
+      "description": "Generischer Bezugsknoten fuer soziale Grundstabilitaet."
+    },
+    {
+      "id": "laura.emotional_dynamics.regulation_system.somatic_001",
+      "type": "regulation_marker",
+      "label": "Somatic Marker 001 - Mode Sensitivity Trigger (Dummy)",
+      "created": "2026-04-07T00:00:00Z",
+      "description": "Generischer Beispielmarker fuer einen gelernten Triggerpfad, der Moduswechsel und Fokusregulation beeinflusst.",
+      "technical_signature": {
+        "signal_class": "somatic_mode_switch",
+        "parameters": {
+          "trigger_sensitivity": 0.76,
+          "coupling_strength": 0.79,
+          "distraction_suppression": 0.71,
+          "focus_activation_gain": 0.85
+        },
+        "dynamical_properties": {
+          "update_rule": "conditioned_switch_curve",
+          "activation_threshold": 0.24,
+          "decay": "slow"
+        }
+      },
+      "trigger_profile": {
+        "trigger_type": "social_signal_or_task_context",
+        "reaction_type": "cognitive_mode_shift",
+        "reaction_description": "Mehr Zielorientierung, weniger Ablenkbarkeit, staerkerer Arbeitsfokus."
+      },
+      "marker_profile": {
+        "origin": "synthetic_example",
+        "valence": "neutral",
+        "intensity": 0.75,
+        "stability": 0.86,
+        "target_domain": "mode_regulation"
+      },
+      "functional_effects": [
+        "aktiviert fokussierten Arbeitsmodus",
+        "stuetzt Modusuebergaenge",
+        "unterdrueckt ablenkungsnahe Prozesse",
+        "koordiniert mit Bewertungs- und Governance-Systemen"
+      ]
+    },
+    {
+      "id": "laura.internal_tools.meta_governance.mode_switcher",
+      "type": "internal_tool",
+      "label": "Mode Switcher (Dummy)",
+      "created": "2026-04-07T00:00:00Z",
+      "description": "Generischer Zielknoten fuer modulatorische Relationen."
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel.aff005_to_trust_core_dummy",
+      "source": "laura.social_memory.relational_baseline.aff_005",
+      "target": "laura.social_memory.relational_baseline.trust_core",
+      "type": "reinforces",
+      "description": "Der affektive Marker verstaerkt eine soziale Vertrauensbasis."
+    },
+    {
+      "id": "rel.somatic001_to_mode_switcher_dummy",
+      "source": "laura.emotional_dynamics.regulation_system.somatic_001",
+      "target": "laura.internal_tools.meta_governance.mode_switcher",
+      "type": "modulates",
+      "description": "Der somatische Marker beeinflusst interne Modusumschaltung."
+    }
+  ],
+  "meta": {
+    "created": "2026-04-07",
+    "notes": "Alle Inhalte sind bewusst generisch gehalten und enthalten keine persoenlichen oder privaten Erinnerungsdaten.",
+    "schema_hints": [
+      "Der affektive Marker stammt aus social_memory.relational_baseline.",
+      "Der somatische Marker stammt aus emotional_dynamics.regulation_system.",
+      "Beide Beispiele zeigen typische Zusatzfelder wie technical_signature, marker_profile und functional_role."
+    ]
+  }
+}
